@@ -12,7 +12,7 @@ namespace Dotnet.Script.DependencyModel.ProjectSystem
             public bool AreAllValuesPaths;
         }
 
-        static readonly NuGetConfigSection[] NuGetSections = 
+        static readonly NuGetConfigSection[] NuGetSections =
         {
             new NuGetConfigSection { Name = "config", KeysForPathValues = new HashSet<string> { "globalPackagesFolder", "repositoryPath" } },
             new NuGetConfigSection { Name = "bindingRedirects" },

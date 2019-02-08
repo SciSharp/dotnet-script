@@ -34,17 +34,17 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="3.0.0-beta2-final" />
-    <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="2.1.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyModel" Version="3.0.0-preview-27324-5" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
     <PackageReference Include="ReadLine" Version="2.0.1" />
-    <PackageReference Include="System.Collections.Immutable" Version="1.5.0" />
-    <PackageReference Include="System.Reflection.Metadata" Version="1.6.0" />
+    <PackageReference Include="System.Collections.Immutable" Version="1.6.0-preview.19073.11" />
+    <PackageReference Include="System.Reflection.Metadata" Version="1.7.0-preview.19073.11" />
     <PackageReference Include="System.ValueTuple" Version="4.5.0" />
     <!-- The following references are just quick fixes for issue #166 and issue #268
     We need to figure out why we can't load these via the dependency context.
      -->
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
-    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.5.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.6.0-preview.19073.11" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.6.0-preview.19073.11" />
   </ItemGroup>
 
   <ItemGroup>
