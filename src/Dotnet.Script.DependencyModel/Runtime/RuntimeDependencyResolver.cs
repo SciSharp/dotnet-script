@@ -137,7 +137,7 @@ namespace Dotnet.Script.DependencyModel.Runtime
                 nlg => AppliesToCurrentRuntime(nlg.Runtime)))
             {
 
-                foreach (var assetPath in nativeLibraryGroup.AssetPaths)
+                foreach (var assetPath in nativeLibraryGroup.AssetPaths.Where(path => !path.EndsWith("_._")))
                 {
                     var fullPath = GetFullPath(Path.Combine(runtimeLibrary.Path, assetPath), nugetPackageFolders);
                     _logger.Trace($"Loading native library from {fullPath}");
